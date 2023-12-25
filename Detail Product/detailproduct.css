@@ -1,0 +1,272 @@
+* {
+  font-family: "Hedvig Letters Serif", serif;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: 50px auto;
+  font-size: 15px;
+}
+.detail_select {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 10%;
+}
+.detail_select img {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+}
+.detail_left {
+  margin-right: 30px;
+  width: 40%;
+  
+}
+.detail_left img {
+  width: 100%;
+}
+.detail_right {
+  width: 50%;
+}
+.detail_right .detail-name {
+  display: flex;
+}
+.detail_right .detail-name p i {
+  color: #ffc107;
+}
+.detail_right .detail-name .name {
+  margin-bottom: 15px;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.detail_right .info {
+  display: flex;
+  justify-content: space-between;
+  color: #2f2f2f;
+  margin-bottom: 15px;
+}
+
+.detail_right .price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.detail_right .price .price-content {
+  color: #183468;
+  font-size: 20px;
+}
+.detail_right .price i {
+  margin-right: 5px;
+}
+.detail_right .hotline {
+  margin-bottom: 15px;
+}
+.detail_right .hotline strong {
+  color: #ad2b36;
+}
+.detail_right .hotline i {
+  color: #ad2b36;
+}
+.detail_right .coupon {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.detail_right .coupon-title {
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+.detail_right .coupon p {
+  padding: 10px;
+}
+.detail_right .coupon i {
+  padding-right: 10px;
+}
+.detail_right .coupon a {
+  text-decoration: none;
+  color: blue;
+}
+.detail_right .coupon img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+.detail_right button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad2a36;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.detail_right .button {
+  display: flex;
+  justify-content: space-between;
+}
+.detail_right .button p {
+  font-size: 12px;
+}
+.detail_right .button button {
+  width: 49%;
+  background-color: #003468;
+  padding: 11px;
+}
+.detail_right ul li {
+  list-style: none;
+  line-height: 25px;
+  margin: 5px 0;
+}
+.detail_right ul li i {
+  color: #003464;
+  padding-right: 15px;
+}
+.detail_right ul li a {
+  text-decoration: none;
+  color: blue;
+}
+.detail_right ul li a .policy {
+  color: gainsboro;
+}
+
+.footer__info2 i{
+    background-color: rgb(73,73,73);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    border: 10px solid  rgb(73,73,73);
+    border-radius:100%;
+    margin-right: 20px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.addInfo {
+  max-width: 1050px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.accordion,
+.panel {
+  max-width: 600px;
+}
+.accordion {
+  background-color: rgb(235, 235, 235);
+  font-size: 18px;
+  font-weight: bold;
+}
+.panel {
+  padding: 0;
+}
+table {
+  width: 100%;
+}
+table tr {
+  line-height: 40px;
+  width: 100%;
+}
+table tr:nth-child(2n) {
+  background-color: rgb(228, 228, 228);
+}
+table tr td:first-child {
+  font-weight: bold;
+  padding: 0 14px;
+}
+@media screen and (max-width: 576px) {
+  .detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .detail_select{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    order: 2;
+    margin-top: 30px;
+  }
+  .detail_select img{
+    margin-right: 20px;
+  }
+  .detail_left{
+    width: 100%;
+    order: 1;
+  }
+  .detail_left img{
+    width: 90%;
+  }
+  .detail_right{
+    order: 3;
+    width: 90%;
+  }
+  .addInfo{
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .detail{
+    display: grid;
+    grid-template-areas: "d1 d2"
+                          "d3 d3";
+    padding: 20px;
+    margin: auto;
+    column-gap: 10px;
+    width: 100%;
+  }
+  .detail_select{
+    grid-area: d1;
+  }
+  .detail_left{
+    grid-area: d2;
+    width: 100%;
+  }
+  .detail_left img{
+    width: 90%;
+  }
+  .detail_right{
+    grid-area: d3;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .addInfo{
+    padding: 20px;
+  }
+}

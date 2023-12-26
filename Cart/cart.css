@@ -138,7 +138,7 @@ body{
 .apply input{
     margin-left: 130px;
     /* margin-right: 90px; */
-    width: 100%;
+    width: 80%;
     height: 22px;
     padding: 10px;
     border: 1px solid #CACACA;
@@ -156,14 +156,15 @@ button:hover{
     background-color: black;
     color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
     .cart{
         width: 100%;
         display: flex;
         flex-direction: column;
+        font-size: 12pt;
     }
     .cart-product{
-        width: 100%;
+        width: 90%;
         padding: 20px;
     }
     .cart-product-title{
@@ -174,20 +175,91 @@ button:hover{
         margin-bottom: 20px;
         margin-left: 0
     }
+    .cart-product-item-info{
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .cart-product-item-img{
+        width: 30%;
+    }
+    .cart-product-item-img img{
+        width: 100%;
+    }
     .cart-product-button {
         justify-content: center;
+        align-items: center;
     }
     .ordersummary{
+        width: 100%;
         margin-right: 0;
         padding: 20px;
+
+    }
+    .ordersummary-button button{
+        width: 90%;
     }
     .apply{
         margin-bottom: 20px;
         padding: 20px;
-        width: 100%;
+        width: 90%;
     }
     .apply input{
+        width: 90%;
+        margin-left: 0px;
+        
+    }
+}
+@media screen and (max-width: 1024px)  {
+    .cart{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12pt;
+    }
+    .cart-product{
+        width: 90%;
+        padding: 20px;
+    }
+    .cart-product-title{
+        margin-left: 0;
+    }
+    .cart-product-item{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0
+    }
+    .cart-product-item-info{
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .cart-product-item-img{
+        width: 30%;
+    }
+    .cart-product-item-img img{
+        width: 100%;
+    }
+    .cart-product-button {
+        justify-content: center;
+        align-items: center;
+    }
+    .ordersummary{
+        width: 100%;
+        margin-right: 0;
+        padding: 20px;
+
+    }
+    .ordersummary-button button{
+        width: 90%;
+    }
+    .apply{
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 90%;
+    }
+    .apply input{
+        width: 90%;
         margin-left: 0px;
         
     }

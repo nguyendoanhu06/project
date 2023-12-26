@@ -796,11 +796,10 @@ html,body{
           width: 30em;
         }
       }
-/* Responsive cho màn hình có kích thước 576px */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .discount{
         height: 15px;
-        font-size: 8.5pt;
+        font-size: 11pt;
     }
     /* HEADER */
     .header{
@@ -830,6 +829,7 @@ html,body{
       /* margin-left: 0; */
       order: 2;
     }
+    /* menu */
     .menu__content nav {
         width: 100%;
         /* padding: 10px; */
@@ -869,7 +869,7 @@ html,body{
     }
     /* banner */
     .banner__info{
-        width: 50%;
+        width: 60%;
     }
     .banner__info img{
         width: 100%;
@@ -891,8 +891,9 @@ html,body{
         font-size: 20pt;
     }
     .collection__product{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 10px;
     }
     .collection__product1{
         margin-bottom: 30px;
@@ -920,8 +921,9 @@ html,body{
         font-size: 20pt;
     }
     .product-content{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
         
     }
     .product-content_item{
@@ -1053,7 +1055,6 @@ html,body{
     }
     .review-content-rate img{
         margin-left: 0px;
-        
     }
     .review-content-icon {
         margin-left: 50px;
@@ -1124,10 +1125,9 @@ html,body{
         border: none;
         margin-bottom: 20px;
     }
-  } 
+} 
   
-  /* Responsive cho màn hình có kích thước 768px */
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .discount{
         height: 15px;
         font-size: 11pt;

@@ -32,7 +32,7 @@ function render(){
     }
     document.querySelector('.rendercontent').innerHTML=content
     let subtotal = Subtotal();
-  document.querySelector('.subtotal').innerHTML = `Subtotal: ${subtotal}$`;
+    document.querySelector('.subtotal').innerHTML = `Subtotal: ${subtotal}$`;
 
 }
 

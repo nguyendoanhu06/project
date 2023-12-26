@@ -209,7 +209,7 @@ table tr td:first-child {
   font-weight: bold;
   padding: 0 14px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .detail{
     width: 100%;
     display: flex;
@@ -241,7 +241,7 @@ table tr td:first-child {
     padding: 20px;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
+/* @media screen and (max-width: 1024px) {
   .detail{
     display: grid;
     grid-template-areas: "d1 d2"
@@ -269,4 +269,4 @@ table tr td:first-child {
   .addInfo{
     padding: 20px;
   }
-}
+} */
